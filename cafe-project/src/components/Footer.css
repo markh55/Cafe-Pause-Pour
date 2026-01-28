@@ -1,0 +1,21 @@
+.footer {
+  background-color: #4a5d45;
+  color: #ebebeb;
+  width: 100%;
+  left: 0;
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 0;
+}
+
+.location {
+  text-align: left;
+  margin-left: 50px;
+}
+
+.opening-hours {
+  text-align: right;
+  margin-right: 50px;
+}
