@@ -12,6 +12,7 @@ function Home() {
           Pause &amp; Pour
           <br />
           <span className="hero-title-cafe">Cafe</span>
+          <button className="order-button">Order Now</button>
         </h1>
       </section>
       <Footer />
