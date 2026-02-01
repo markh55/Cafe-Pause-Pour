@@ -43,12 +43,30 @@ function Home() {
         <h2 className="featured-items-header">Most Popular Menu Items</h2>
         <div className="featured-items-list">
           <div className="featured-item">
-            <img src="" alt="Latte" />
             <h3>Latte - £4.00</h3>
             <p>
               Our signature blend espresso with steamed milk for a smooth and
               creamy coffee.
             </p>
+            <img src="/latte.jpg" alt="Latte" />
+          </div>
+          <div className="featured-item">
+            <img src="./flatwhite.jpg" alt="Flat White" />
+            <h3>Flat White - £3.00</h3>
+            <p>
+              A short but intense espresso, expertly combined with sweet
+              textured milk for a rich and velvety coffee.
+            </p>
+            <br />
+            <button>View Menu</button>
+          </div>
+          <div className="featured-item">
+            <h3>Cappuccino - £3.50</h3>
+            <p>
+              Perfectly extracted espresso capped with luxurious frothy milk,
+              finished with a chocolatey dusting.
+            </p>
+            <img src="/cappuccino.jpg" alt="Cappuccino" />
           </div>
         </div>
       </section>
