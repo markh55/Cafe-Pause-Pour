@@ -11,7 +11,16 @@ function Navbar() {
           <a href="/menu">Menu</a>
         </li>
         <li>
-          <a href="/location">Location</a>
+          <a
+            href="#location"
+            onClick={(e) => {
+              e.preventDefault();
+              const el = document.getElementById("location");
+              if (el) el.scrollIntoView({ behavior: "smooth" });
+            }}
+          >
+            Location
+          </a>
         </li>
       </ul>
     </nav>

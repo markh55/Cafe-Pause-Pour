@@ -3,7 +3,7 @@ import "./Footer.css";
 function Footer() {
   return (
     <footer className="footer">
-      <div className="location">
+      <div className="location" id="location">
         <h3>Where to find us</h3>
         <p>Springvale IND EST</p>
         <p>Cwmbran</p>
