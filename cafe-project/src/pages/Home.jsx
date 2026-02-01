@@ -1,6 +1,7 @@
 import Footer from "../components/Footer.jsx";
 import Navbar from "../components/Navbar.jsx";
 import "./Main.css";
+import "../components/Responsive.css";
 
 function Home() {
   return (
