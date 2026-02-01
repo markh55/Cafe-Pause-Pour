@@ -16,13 +16,41 @@ function Home() {
         </h1>
       </section>
       <section className="about-us">
-        <h2>About Us</h2>
-        <p>
-          Welcome to Pause &amp; Pour Cafe, your cozy corner for the finest
-          brews and delightful treats. We are passionate about crafting the
-          perfect cup of coffee and providing a warm, inviting atmosphere for
-          our customers.
-        </p>
+        <div className="about-us-content">
+          <h2 className="about-us-header">About Us</h2>
+          <p className="about-us-tagline">
+            At Pause &amp; Pour Cafe, we believe its more than just a drink its
+            a moment.
+          </p>
+          <br />
+          <ul className="about-us-list">
+            <li>
+              <strong>Warm &amp; Cosy</strong>
+            </li>
+            <li>
+              <strong>Free Wi-Fi</strong>
+            </li>
+            <li>
+              <strong>Quick &amp; Friendly Service</strong>
+            </li>
+          </ul>
+        </div>
+        <div className="about-us-image">
+          <img src="./CoffeeCups.jpg" alt="Coffee cups" />
+        </div>
+      </section>
+      <section className="featured-items">
+        <h2 className="featured-items-header">Most Popular Menu Items</h2>
+        <div className="featured-items-list">
+          <div className="featured-item">
+            <img src="" alt="Latte" />
+            <h3>Latte - £4.00</h3>
+            <p>
+              Our signature blend espresso with steamed milk for a smooth and
+              creamy coffee.
+            </p>
+          </div>
+        </div>
       </section>
       <Footer />
     </div>
