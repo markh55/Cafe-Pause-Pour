@@ -59,7 +59,7 @@ function Home() {
               textured milk for a rich and velvety coffee.
             </p>
             <br />
-            <button>View Menu</button>
+            <button className="bottom-menu-button">View Menu</button>
           </div>
           <div className="featured-item">
             <h3>Cappuccino - £3.50</h3>
