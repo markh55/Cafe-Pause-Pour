@@ -1,11 +1,11 @@
 .navbar {
   background-color: #ebebeb;
-  border-radius: 20px;
-  padding: 15px 30px;
+  border-radius: 28px;
+  padding: 28px 60px;
   width: max-content;
   margin: 0 auto;
   position: fixed;
-  top: 45px;
+  top: 32px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1000;
@@ -60,12 +60,14 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
-  gap: 30px;
+  gap: 48px;
+  font-size: 1.35rem;
+  font-weight: 600;
 }
 
 .nav-links a {
   text-decoration: none;
-  color: black;
+  color: #4a5d45;
   font-weight: bold;
 }
 

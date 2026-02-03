@@ -9,6 +9,29 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
+      {/* Desktop Nav Links */}
+      <ul className="nav-links desktop-only">
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li>
+          <a href="/menu">Menu</a>
+        </li>
+        <li>
+          <a
+            href="#location"
+            onClick={(e) => {
+              e.preventDefault();
+              const el = document.getElementById("location");
+              if (el) el.scrollIntoView({ behavior: "smooth" });
+            }}
+          >
+            Location
+          </a>
+        </li>
+      </ul>
+
+      {/* Burger menu for mobile */}
       <button
         className="burger-menu"
         onClick={() => setIsMenuOpen(true)}
@@ -19,6 +42,7 @@ const Navbar = () => {
         <span></span>
         <span></span>
       </button>
+      {/* Mobile Nav Menu */}
       <ul className={`mobile-menu${isMenuOpen ? " active" : ""}`}>
         <button
           className="close-btn"
