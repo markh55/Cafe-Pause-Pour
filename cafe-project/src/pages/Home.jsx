@@ -1,9 +1,35 @@
+import { useEffect } from "react";
 import Footer from "../components/Footer.jsx";
 import Navbar from "../components/Navbar.jsx";
 import "./Main.css";
 import "../components/Responsive.css";
 
 function Home() {
+  useEffect(() => {
+    const moveButton = () => {
+      const button = document.querySelector(".bottom-menu-button");
+      const flatWhiteItem = document.querySelectorAll(".featured-item")[1]; // Flat White (middle item)
+      const cappuccinoItem = document.querySelectorAll(".featured-item")[2]; // Cappuccino (last item)
+
+      if (window.innerWidth > 900) {
+        // Desktop: move button to Flat White
+        if (button && flatWhiteItem && !flatWhiteItem.contains(button)) {
+          flatWhiteItem.appendChild(button);
+        }
+      } else {
+        // Mobile: move button to Cappuccino
+        if (button && cappuccinoItem && !cappuccinoItem.contains(button)) {
+          cappuccinoItem.appendChild(button);
+        }
+      }
+    };
+
+    moveButton();
+    window.addEventListener("resize", moveButton);
+
+    return () => window.removeEventListener("resize", moveButton);
+  }, []);
+
   return (
     <div className="home-page">
       <Navbar />
@@ -58,8 +84,6 @@ function Home() {
               A short but intense espresso, expertly combined with sweet
               textured milk for a rich and velvety coffee.
             </p>
-            <br />
-            <button className="bottom-menu-button">View Menu</button>
           </div>
           <div className="featured-item">
             <h3>Cappuccino - £3.50</h3>
@@ -68,6 +92,7 @@ function Home() {
               finished with a chocolatey dusting.
             </p>
             <img src="/cappuccino.jpg" alt="Cappuccino" />
+            <button className="bottom-menu-button">View Menu</button>
           </div>
         </div>
       </section>

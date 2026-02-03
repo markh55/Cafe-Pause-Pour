@@ -17,6 +17,12 @@
   .featured-items-list {
     gap: 80px;
   }
+
+  .order-button {
+    bottom: 120px;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
 }
 
 /* Responsive styles for mobile layout */
@@ -116,10 +122,10 @@
     display: none;
   }
 
-  .bottom-menu-button {
+  .featured-item:last-child .bottom-menu-button {
     display: block;
     width: 200px;
-    margin: 30px auto;
+    margin: 30px auto 0;
     padding: 12px 0;
     font-size: 1.1rem;
     background: #8b6f47;
@@ -127,6 +133,7 @@
     border: none;
     border-radius: 8px;
     cursor: pointer;
+    order: 4;
   }
 
   .footer {
