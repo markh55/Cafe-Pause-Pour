@@ -1,7 +1,7 @@
 .navbar {
   background-color: #ebebeb;
   border-radius: 10px;
-  padding: 10px 20px;
+  padding: 15px 25px;
   width: max-content;
   margin: 0 auto;
   position: fixed;
@@ -9,6 +9,28 @@
   left: 50%;
   transform: translateX(-50%);
   z-index: 1000;
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+/* Logo styles - show on both desktop and mobile */
+.navbar-logo {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.logo-main {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #4a5d45;
+}
+
+.logo-sub {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #4a5d45;
 }
 
 .burger-menu {
@@ -19,7 +41,7 @@
   width: 48px;
   height: 48px;
   border: none;
-  border-radius: 16px;
+  border-radius: 12px;
   cursor: pointer;
   z-index: 1101;
   position: relative;
@@ -37,21 +59,19 @@
   outline: none;
 }
 
-/* Burger to X animation - with thicker white outline */
+/* Burger to X animation */
 .burger-menu span {
   display: block;
-  width: 30px;
-  height: 5px;
+  width: 28px;
+  height: 4px;
   margin: 4px 0;
-  background: #2a3a27;
+  background: #4a5d45;
   border-radius: 2px;
   transition: all 0.3s ease;
-  filter: drop-shadow(0 0 0 2px white) drop-shadow(0 3px 6px rgba(0, 0, 0, 0.6));
-  box-shadow: 0 0 0 2px white;
 }
 
 .burger-menu.active span:nth-child(1) {
-  transform: translateY(13px) rotate(45deg);
+  transform: translateY(12px) rotate(45deg);
 }
 
 .burger-menu.active span:nth-child(2) {
@@ -59,7 +79,7 @@
 }
 
 .burger-menu.active span:nth-child(3) {
-  transform: translateY(-13px) rotate(-45deg);
+  transform: translateY(-12px) rotate(-45deg);
 }
 
 .nav-links {
@@ -91,7 +111,7 @@
   width: 100vw;
   background: #ebebeb;
   list-style: none;
-  padding: 100px 0 40px 0;
+  padding: 80px 0 40px 0;
   margin: 0;
   z-index: 1100;
   box-shadow: 0 8px 24px rgba(60, 70, 60, 0.2);
@@ -141,21 +161,22 @@
     top: 0;
     transform: none;
     border-radius: 0;
-    padding: 0;
-    background: transparent;
-    box-shadow: none;
+    padding: 0px 20px;
+    background: #ebebeb;
+    box-shadow: 0 2px 8px rgba(60, 70, 60, 0.1);
     position: fixed;
     z-index: 1200;
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0;
   }
 
   .burger-menu {
     display: flex;
-    position: fixed;
-    top: 24px;
-    right: 24px;
+    position: relative;
+    top: auto;
+    right: auto;
     z-index: 1202;
     width: 44px;
     height: 44px;
@@ -165,6 +186,16 @@
 
   .nav-links.desktop-only {
     display: none !important;
+  }
+
+  /* Hide Order Now button on mobile */
+  .order-button {
+    display: none !important;
+  }
+
+  /* Make hero section start below navbar */
+  .hero {
+    margin-top: 80px;
   }
 }
 

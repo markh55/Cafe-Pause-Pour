@@ -35,19 +35,13 @@ function Home() {
       <Navbar />
       <section className="hero">
         <img src="/Cafe.png" alt="Cafe" />
-        <h1 className="hero-title">
-          Pause &amp; Pour
-          <br />
-          <span className="hero-title-cafe">Cafe</span>
-          <button className="order-button">Order Now</button>
-        </h1>
       </section>
       <section className="about-us">
         <div className="about-us-content">
           <h2 className="about-us-header">About Us</h2>
           <p className="about-us-tagline">
-            At Pause &amp; Pour Cafe, we believe its more than just a drink its
-            a moment.
+            At Pause &amp; Pour, we believe its more than just a drink its a
+            moment.
           </p>
           <br />
           <ul className="about-us-list">

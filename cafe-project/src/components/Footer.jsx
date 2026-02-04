@@ -3,7 +3,7 @@ import { FaInstagram, FaFacebookF, FaXTwitter } from "react-icons/fa6";
 
 function Footer() {
   return (
-    <footer className="footer">
+    <footer className="footer" id="location">
       <div className="footer-left">
         <h3>Where to find us</h3>
         <p>Springvale IND EST</p>

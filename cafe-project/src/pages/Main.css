@@ -84,25 +84,33 @@ h1 {
 
 .about-us {
   background-color: #4a5d45;
-  padding: 40px 200px;
-  justify-content: space-between;
-  gap: 100px;
+  padding: 80px 120px;
   display: flex;
   align-items: center;
+  justify-content: center;
+  gap: 100px;
+  min-height: 500px;
+}
+
+.about-us-content {
+  flex: 1;
+  text-align: left;
+  max-width: 650px;
 }
 
 .about-us-header {
   color: #ebebeb;
-  text-align: center;
+  text-align: left;
   font-size: 48px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .about-us-tagline {
   color: #ebebeb;
   text-align: left;
-  font-size: 24px;
+  font-size: 22px;
   line-height: 1.6;
+  margin-bottom: 20px;
 }
 
 .about-us-list {
@@ -111,24 +119,18 @@ h1 {
   font-size: 20px;
   list-style-type: disc;
   padding-left: 20px;
-}
-
-.about-us-content {
-  flex: 1;
-  text-align: left;
-  max-width: 600px;
-  padding-left: 100px;
+  line-height: 2;
 }
 
 .about-us-image {
-  flex: 1;
+  flex: 0 0 auto;
 }
 
 .about-us-image img {
-  width: 550px;
-  height: 300px;
+  width: 450px;
+  height: 450px;
   border-radius: 50px;
-  margin-left: 300px;
+  object-fit: cover;
 }
 
 .featured-items {
@@ -199,4 +201,43 @@ h1 {
   border: none;
   border-radius: 8px;
   cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .about-us {
+    flex-direction: row;
+    padding: 40px 20px;
+    gap: 20px;
+    align-items: flex-start;
+  }
+
+  .about-us-content {
+    flex: 1;
+    padding-left: 0;
+    max-width: 50%;
+  }
+
+  .about-us-header {
+    font-size: 32px;
+    text-align: left;
+  }
+
+  .about-us-tagline {
+    font-size: 16px;
+  }
+
+  .about-us-list {
+    font-size: 14px;
+  }
+
+  .about-us-image {
+    flex: 0 0 auto;
+  }
+
+  .about-us-image img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-left: 0;
+  }
 }

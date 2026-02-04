@@ -8,6 +8,11 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
+      {/* Logo - shows on both mobile and desktop */}
+      <div className="navbar-logo">
+        <span className="logo-main">Pause & Pour</span>
+      </div>
+
       {/* Desktop Nav Links */}
       <ul className="nav-links desktop-only">
         <li>
