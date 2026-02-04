@@ -4,7 +4,6 @@ import "./Navbar.css";
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  // Define closeMenu to fix ReferenceError
   const closeMenu = () => setIsMenuOpen(false);
 
   return (
@@ -31,27 +30,20 @@ const Navbar = () => {
         </li>
       </ul>
 
-      {/* Burger menu for mobile */}
+      {/* Burger menu for mobile - morphs into X */}
       <button
-        className="burger-menu"
-        onClick={() => setIsMenuOpen(true)}
-        aria-label="Open menu"
+        className={`burger-menu${isMenuOpen ? " active" : ""}`}
+        onClick={() => setIsMenuOpen(!isMenuOpen)}
+        aria-label={isMenuOpen ? "Close menu" : "Open menu"}
         type="button"
       >
         <span></span>
         <span></span>
         <span></span>
       </button>
-      {/* Mobile Nav Menu */}
+
+      {/* Mobile Nav Menu - Dropdown */}
       <ul className={`mobile-menu${isMenuOpen ? " active" : ""}`}>
-        <button
-          className="close-btn"
-          onClick={() => setIsMenuOpen(false)}
-          aria-label="Close menu"
-          type="button"
-        >
-          &times;
-        </button>
         <li>
           <a href="/" onClick={closeMenu}>
             Home
