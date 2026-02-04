@@ -86,10 +86,10 @@ h1 {
   background-color: #4a5d45;
   padding: 80px 120px;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 100px;
-  min-height: 500px;
+  gap: 2rem;
 }
 
 .about-us-content {
@@ -203,7 +203,8 @@ h1 {
   cursor: pointer;
 }
 
-@media (max-width: 900px) {
+/* Tablet view: side-by-side layout */
+@media (max-width: 900px) and (min-width: 701px) {
   .about-us {
     flex-direction: row;
     padding: 40px 20px;
@@ -239,5 +240,47 @@ h1 {
     max-width: 400px;
     height: auto;
     margin-left: 0;
+  }
+}
+
+/* Mobile view: stacked layout with text first, then image */
+@media (max-width: 700px) {
+  .about-us {
+    flex-direction: column;
+    padding: 40px 20px;
+    align-items: stretch;
+  }
+
+  .about-us-content {
+    order: 1;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  .about-us-image {
+    order: 2;
+    width: 100%;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .about-us-image img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+  }
+
+  .about-us-header {
+    font-size: 32px;
+  }
+
+  .about-us-tagline {
+    font-size: 18px;
+  }
+
+  .about-us-list {
+    font-size: 16px;
   }
 }

@@ -1,9 +1,11 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import Menu from "./pages/Menu.jsx";
 import Home from "./pages/Home.jsx";
 
 function App() {
+  const path = window.location.pathname;
+  if (path === "/menu") {
+    return <Menu />;
+  }
   return <Home />;
 }
 
