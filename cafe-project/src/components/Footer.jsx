@@ -12,13 +12,28 @@ function Footer() {
       </div>
       <div className="footer-center">
         <div className="footer-icons">
-          <a href="#" aria-label="Instagram">
+          <a
+            href="https://instagram.com"
+            aria-label="Instagram"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FaInstagram />
           </a>
-          <a href="#" aria-label="Facebook">
+          <a
+            href="https://facebook.com"
+            aria-label="Facebook"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FaFacebookF />
           </a>
-          <a href="#" aria-label="X">
+          <a
+            href="https://twitter.com"
+            aria-label="X"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FaXTwitter />
           </a>
         </div>
