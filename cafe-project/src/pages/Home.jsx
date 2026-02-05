@@ -86,7 +86,14 @@ function Home() {
               finished with a chocolatey dusting.
             </p>
             <img src="/cappuccino.jpg" alt="Cappuccino" />
-            <button className="bottom-menu-button">View Menu</button>
+            <button
+              className="bottom-menu-button"
+              onClick={() => {
+                window.location.pathname = "/menu";
+              }}
+            >
+              View Menu
+            </button>
           </div>
         </div>
       </section>
