@@ -1,0 +1,226 @@
+/* Mobile First - Menu Page Styles */
+
+.menu-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Hero Section */
+.menu-hero {
+  background-color: #f5f5f0;
+  padding: 1.5rem 1.5rem;
+  text-align: center;
+}
+
+.menu-hero-title {
+  font-size: 2rem;
+  color: #4a5d45;
+  margin: 0 0 0.5rem 0;
+  font-weight: 600;
+}
+
+.menu-hero-subtitle {
+  font-size: 1rem;
+  color: #4a5d45;
+  margin: 0;
+  font-weight: 400;
+}
+
+/* Menu Container */
+.menu-container {
+  flex: 1;
+  background-color: #ffffff;
+  padding: 1.5rem;
+  max-width: 600px;
+  margin: 0 auto;
+  width: 100%;
+  width: 100vw;
+  max-width: 100vw;
+  margin: 0;
+}
+
+/* Menu Section */
+.menu-section {
+  margin-bottom: 3rem;
+}
+
+.menu-section:last-child {
+  margin-bottom: 0;
+}
+
+.menu-section-title {
+  font-size: 1.5rem;
+  color: #4a5d45;
+  text-align: center;
+  margin: 0 0 1.5rem 0;
+  font-weight: 600;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid #e0e0d8;
+}
+
+/* Menu Items */
+.menu-items {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.menu-item-info {
+  flex: 1;
+}
+
+.menu-item-name {
+  font-size: 1.125rem;
+  color: #4a5d45;
+  margin: 0 0 0.25rem 0;
+  font-weight: 600;
+}
+
+.menu-item-description {
+  font-size: 0.875rem;
+  color: #4a5d45;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.menu-item-price {
+  font-size: 1.125rem;
+  color: #4a5d45;
+  font-weight: 600;
+  white-space: nowrap;
+  padding-top: 0.125rem;
+}
+
+/* Tablet Styles - 768px and up */
+@media screen and (min-width: 768px) {
+  .menu-hero {
+    padding: 4rem 2rem 1.5rem 2rem;
+  }
+
+  .menu-hero-title {
+    font-size: 2.5rem;
+  }
+
+  .menu-hero-subtitle {
+    font-size: 1.125rem;
+  }
+
+  .menu-container {
+    padding: 1rem 2.5rem;
+    max-width: 900px;
+  }
+
+  .menu-section {
+    margin-bottom: 3rem;
+  }
+
+  .menu-section-title {
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+    text-align: left;
+  }
+
+  .menu-items {
+    gap: 1.5rem;
+  }
+
+  /* Two-column layout for pastries on tablet+ */
+  .pastries-section .menu-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem 2.5rem;
+  }
+
+  .menu-item-name {
+    font-size: 1.25rem;
+  }
+
+  .menu-item-description {
+    font-size: 0.9375rem;
+  }
+
+  .menu-item-price {
+    font-size: 1.25rem;
+  }
+}
+
+/* Desktop Styles - 1024px and up */
+@media screen and (min-width: 1024px) {
+  .menu-hero {
+    padding: 10rem 3rem 2rem 3rem;
+  }
+
+  .menu-hero-title {
+    font-size: 3.5rem;
+  }
+
+  .menu-hero-subtitle {
+    font-size: 1.5rem;
+  }
+
+  .menu-container {
+    padding: 2rem 3rem;
+    width: 100vw;
+    max-width: 100vw;
+    margin: 0;
+  }
+
+  .menu-section {
+    margin-bottom: 3.5rem;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* Restore original layout for .menu-items and .menu-item */
+
+  .menu-section-title {
+    font-size: 2.25rem;
+    padding-bottom: 1.2rem;
+    text-align: left;
+    border-bottom: 2px solid #4a5d45;
+    margin-bottom: 2.2rem;
+  }
+
+  .menu-items {
+    gap: 1.75rem;
+  }
+
+  /* Two-column layout for pastries on desktop */
+  .pastries-section .menu-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem 3rem;
+  }
+
+  .menu-item {
+    gap: 1.5rem;
+  }
+
+  .menu-item-name {
+    font-size: 2.25rem;
+  }
+
+  .menu-item-description {
+    font-size: 1.5rem;
+  }
+
+  .menu-item-price {
+    font-size: 2.25rem;
+  }
+}
+
+/* Large Desktop - 1440px and up */
+@media screen and (min-width: 1440px) {
+  .menu-container {
+    width: 100vw;
+    max-width: 100vw;
+  }
+}
