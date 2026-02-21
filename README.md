@@ -42,4 +42,6 @@ It highlights how even a simple two-page static site can add meaningful value to
 ## Tech Stack
 
 - **React**
+- **JavaScript**
+- **HTML**
 - **CSS**
