@@ -1,16 +1,45 @@
-# React + Vite
+# Cafe Pause Pour
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Cafe Pause Pour is a clean, two-page static website created to enhance a small coffee shop’s online visibility and provide customers with easy access to its menu before visiting.
 
-Currently, two official plugins are available:
+The project focuses on delivering a simple, modern, and responsive digital presence that helps strengthen brand identity while improving the customer experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Project Overview
 
-## React Compiler
+Cafe Pause Pour was designed as a lightweight promotional website that showcases a coffee shop’s menu and core brand information in a clear and visually engaging format.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Rather than functioning as a complex web application, this project demonstrates how a well-structured static site can significantly improve a small business’s online presence.
 
-## Expanding the ESLint configuration
+### The website allows customers to
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Browse the Menu**
+- **Plan Their Visit**
+- **Explore the Brand**
+- **Access on Any Device**
+
+## Purpose of the Project
+
+Many small cafés rely primarily on social media or foot traffic but lack a dedicated website where customers can quickly access key information.
+
+This project was created to:
+
+- **Improve online visibility**
+- **Provide a professional digital storefront**
+- **Make the menu easily accessible**
+- **Support customer decision-making**
+- **Strengthen overall brand presence**
+
+It highlights how even a simple two-page static site can add meaningful value to a local business.
+
+## Features
+
+- **Two-page responsive layout**
+- **Clean, modern UI design**
+- **Structured and easy-to-read menu display**
+- **Mobile-friendly design**
+- **Fast-loading static architecture**
+
+## Tech Stack
+
+- **React**
+- **CSS**
